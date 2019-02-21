@@ -1,6 +1,6 @@
 def calcular_precio_producto(coste_producto):
-    costo = (coste_producto * 0.5) + coste_producto
-    return costo
+    Costo = (coste_producto * 0.5) + coste_producto
+    return Costo
     pass
 
 
