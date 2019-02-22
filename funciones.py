@@ -13,12 +13,14 @@ def calcular_precio_producto(coste_producto):
     :param coste_producto: num que representa el costo de fabrica del producto
     :return: num que representa el costo de fabrica mas el 50%
     '''
+
     Costo = (coste_producto * 0.5) + coste_producto
     return Costo
 
 
 
 def calcular_precio_servicio(cantidad_horas):
+
     '''
     num -> num
 
@@ -35,6 +37,7 @@ def calcular_precio_servicio(cantidad_horas):
     '''
     servicio = (cantidad_horas * 100000)
     return servicio
+
 
 
 
