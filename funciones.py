@@ -5,6 +5,8 @@ def calcular_precio_producto(coste_producto):
 
 
 def calcular_precio_servicio(cantidad_horas):
+    servicio = (cantidad_horas * 100000)
+    return servicio
     pass
 
 
