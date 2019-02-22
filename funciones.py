@@ -16,13 +16,29 @@ def calcular_precio_producto(coste_producto):
 
     Costo = (coste_producto * 0.5) + coste_producto
     return Costo
-    pass
+
 
 
 def calcular_precio_servicio(cantidad_horas):
+
+    '''
+    num -> num
+
+    calcula el costo del servicio segun las horas realizadas
+
+    >>> calcular_precio_servicio(3)
+    300000
+
+    >>> calcular_precio_servicio(5)
+    500000
+
+    :param cantidad_horas:num que representa numero de horas trabajadas
+    :return: num que representa el costo del servicio
+    '''
     servicio = (cantidad_horas * 100000)
     return servicio
-    pass
+
+
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
