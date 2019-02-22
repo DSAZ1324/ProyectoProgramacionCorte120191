@@ -26,6 +26,8 @@ def calcular_precio_servicio(cantidad_horas):
 
 
 def calcular_precio_servicio_extras(cantidad_horas):
+    extra = (calcular_precio_servicio(cantidad_horas) * 0.25) + calcular_precio_servicio(cantidad_horas)
+    return extra
     pass
 
 
