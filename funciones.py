@@ -1,50 +1,16 @@
 def calcular_precio_producto(coste_producto):
-    '''
-    num -> num
-
-    Calcular el costo de un producto con una comision del 50% sobre el costo de fabrica
-
-    >>> calcular_precio_producto(1000)
-    1500.0
-
-    >>> calcular_precio_producto(2000)
-    3000.0
-
-    :param coste_producto: num que representa el costo de fabrica del producto
-    :return: num que representa el costo de fabrica mas el 50%
-    '''
-
-    Costo = (coste_producto * 0.5) + coste_producto
-    return Costo
-
-
-
+    costo = (coste_producto * 0.5) + coste_producto
+    return costo
+  
+  
 def calcular_precio_servicio(cantidad_horas):
-
-    '''
-    num -> num
-
-    calcula el costo del servicio segun las horas realizadas
-
-    >>> calcular_precio_servicio(3)
-    300000
-
-    >>> calcular_precio_servicio(5)
-    500000
-
-    :param cantidad_horas:num que representa numero de horas trabajadas
-    :return: num que representa el costo del servicio
-    '''
     servicio = (cantidad_horas * 100000)
     return servicio
-
-
-
-
+  
+  
 def calcular_precio_servicio_extras(cantidad_horas):
     extra = (calcular_precio_servicio(cantidad_horas) * 0.25) + calcular_precio_servicio(cantidad_horas)
     return extra
-    pass
 
 
 def calcular_costo_envio(kilometros):
