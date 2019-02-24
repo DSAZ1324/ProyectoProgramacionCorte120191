@@ -1,13 +1,13 @@
 def calcular_precio_producto(coste_producto):
     costo = (coste_producto * 0.5) + coste_producto
     return costo
-  
-  
+
+
 def calcular_precio_servicio(cantidad_horas):
     servicio = (cantidad_horas * 100000)
     return servicio
-  
-  
+
+
 def calcular_precio_servicio_extras(cantidad_horas):
     extra = (calcular_precio_servicio(cantidad_horas) * 0.25) + calcular_precio_servicio(cantidad_horas)
     return extra
@@ -15,6 +15,7 @@ def calcular_precio_servicio_extras(cantidad_horas):
 
 def calcular_costo_envio(kilometros):
     pass
+
 
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
@@ -25,8 +26,9 @@ def calcular_precio_producto_fuera(coste_producto,
 def calcular_iva_producto(coste_producto, tasa):
     pass
 
+
 def calcular_iva_servicio(cantidad_horas, tasa):
-    tasa = tasa/100
+    tasa = tasa / 100
     iva_servicio = calcular_precio_servicio(cantidad_horas) * tasa
     return iva_servicio
 
@@ -36,7 +38,7 @@ def calcular_iva_envio(kilometros, tasa):
 
 
 def calcular_iva_servicio_extra(cantidad_horas, tasa):
-    tasa = tasa/100
+    tasa = tasa / 100
     iva_extra = calcular_precio_servicio_extras(cantidad_horas) * tasa
     return iva_extra
 
