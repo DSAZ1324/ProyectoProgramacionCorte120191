@@ -2,7 +2,7 @@ def calcular_precio_producto(coste_producto):
     """
     num -> num
 
-    Calcula el costo de un producto con una comision del 50% sobre el costo de fabrica
+    Calcula el costo de un producto mas el 50% sobre el costo de fabrica
 
     >>> calcular_precio_producto(1000)
     1500.0
@@ -64,7 +64,7 @@ def calcular_precio_producto_fuera(coste_producto,
     """
     num -> num
 
-    calcula el preciod e un producto teniendo en cuenta los costos del envio
+    calcula el precio de un producto teniendo en cuenta los costos del envio
 
     >>> calcular_precio_producto_fuera(5000, 500)
     65000.0
