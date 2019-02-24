@@ -9,11 +9,11 @@ class pruebas(unittest.TestCase):
 
     def test_calcular_precio_servicio(self):
         self.assertEqual(f.calcular_precio_servicio(3), 300000)
-        self.assertEqual(f.calcular_precio_servicio(5), 500000)
-        pass
+        self.assertEqual(f.calcular_precio_servicio(0), 0)
 
     def test_calcular_precio_servicio_extras(self):
-        pass
+        self.assertEqual(f.calcular_precio_servicio_extras(5), 625000)
+        self.assertEqual(f.calcular_precio_servicio_extras(0), 0)
 
     def test_calcular_costo_envio(self):
         pass
