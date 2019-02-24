@@ -31,7 +31,7 @@ class pruebas(unittest.TestCase):
     def test_calcular_iva_servicio(self):
         self.assertEqual(f.calcular_iva_servicio(5, 19), 95000)
         self.assertEqual(f.calcular_iva_servicio(0, 0), 0)
-        self.assertEqual(f.calcular_iva_servicio(5, 0), 95000)
+        self.assertEqual(f.calcular_iva_servicio(5, 0), 0)
         self.assertEqual(f.calcular_iva_servicio(0, 19), 0)
 
     def test_calcular_iva_envio(self):
