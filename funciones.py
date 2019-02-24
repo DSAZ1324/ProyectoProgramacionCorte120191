@@ -160,7 +160,4 @@ def calcular_recaudo_mixto_local(coste_producto_1,
                                  coste_producto_2,
                                  horas_1,
                                  horas_2):
-
-  
-def calcular_recaudo_mixto_local(coste_producto_1, coste_producto_2, horas_1, horas_2):
-    pass
+    
