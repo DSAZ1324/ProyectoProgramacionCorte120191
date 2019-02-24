@@ -8,6 +8,8 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_precio_producto(0), 0)
 
     def test_calcular_precio_servicio(self):
+        self.assertEqual(f.calcular_precio_servicio(3), 300000)
+        self.assertEqual(f.calcular_precio_servicio(5), 500000)
         pass
 
     def test_calcular_precio_servicio_extras(self):
