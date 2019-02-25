@@ -27,7 +27,7 @@ def calcular_precio_producto_fuera(coste_producto,
 
 def calcular_iva_producto(coste_producto, tasa):
     tasa = tasa / 100
-    iva_producto = (calcular_iva_producto(coste_producto) * tasa 
+    iva_producto = (calcular_iva_producto(coste_producto)* 0.19) * tasa 
     return iva_producto
 
 
