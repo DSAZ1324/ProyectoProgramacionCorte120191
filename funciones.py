@@ -56,8 +56,20 @@ def calcular_precio_servicio_extras(cantidad_horas):
 
 
 def calcular_costo_envio(kilometros):
-    pass
+    """
+    num -> num 
 
+    calcular el costo del envio cuando se trabaja fuera de la ciudad 
+
+    >>> calcular_costo_envio(500)
+    57500
+
+    >>> calcular_costo_envio(50)
+    5750
+
+    :param kilometros: num que representa los kilometros recorridos en el envio
+    :return: num que representa el precio del costo de envio de por 115 
+    """
 
 def calcular_precio_producto_fuera(coste_producto,
                                    kilometros):
@@ -81,7 +93,21 @@ def calcular_precio_producto_fuera(coste_producto,
 
 
 def calcular_iva_producto(coste_producto, tasa):
-    pass
+    """
+    num -> num
+
+    calcular el iva del producto
+
+    >>> calcular_iva_producto(5000, 0.19)
+    950
+
+    >>> calcular_iva_producto(100000, 0.19)
+    19000
+
+    :param coste_producto: num representa el costo del producto 
+    :param tasa: num representa la cantidad de iva que se va a calcular
+    :return: num representa el iva del producto
+    """
 
 def calcular_iva_servicio(cantidad_horas, tasa):
     """
@@ -105,9 +131,23 @@ def calcular_iva_servicio(cantidad_horas, tasa):
 
 
 def calcular_iva_envio(kilometros, tasa):
-    pass
+    """
+    num -> num 
 
+    representa el calculo para diferenciar el iva del envio
 
+    >>> calcular_iva_envio(500, 19)
+    57.500
+
+    >>> calcular_iva_envio(100, 9)
+    62.000
+
+    :param kilometros: num representa los kilometro recorridos 
+    :param tasa: num representa la cantidad de iva que se va a calcular
+    :return: num representa el iva del envio del producto
+    """
+
+    
 def calcular_iva_servicio_extra(cantidad_horas, tasa):
     """
     num -> num
@@ -130,7 +170,22 @@ def calcular_iva_servicio_extra(cantidad_horas, tasa):
 
 
 def calcular_recaudo_locales(coste_producto_1, coste_producto_2, coste_producto_3):
-    pass
+    """
+    num -> num
+
+    representa el calculo del recaudo de los productos realizados
+
+    >>> calcular_recaudo_locales(1, 2, 3)
+    150000
+
+    >>> calcular_recaudo_locales(2, 3, 4)
+    230000
+    
+    :param coste_producto_1: num que representa el recaurdo local del primer producto
+    :param coste_producto_2: num que representa el recaudo local del segundo producto
+    :param coste_producto_3: num que representa el recaudo local del tercer producto
+    :return: num que representa el recaudo total de los 3 productos ofrecidos
+    """
 
 
 def calcular_recaudo_horas_extra(horas_1, horas_2, horas_3, horas_4):
@@ -156,11 +211,24 @@ def calcular_recaudo_horas_extra(horas_1, horas_2, horas_3, horas_4):
     return recaudo_extra
 
   
-def calcular_recaudo_mixto_local(coste_producto_1,
-                                 coste_producto_2,
-                                 horas_1,
-                                 horas_2):
-
-  
 def calcular_recaudo_mixto_local(coste_producto_1, coste_producto_2, horas_1, horas_2):
-    pass
+    """
+    num -> num
+
+    calcula el recaudo mixto de los productos realuzados en diferentes horas
+
+    >>> calcular_recaudo_mixto_local(3000, 5000, 1, 2)
+    100000
+
+    >>> calcular_recaudo_mixto_local(7000, 10000, 1, 2)
+    25000
+
+    :param coste_producto_1: num representa el costo del primer producto
+    :param coste_producto_2: num representa el costo del segundo producto
+    :param horas_1: num representa las horas utilizadas
+    :param horas_2: num representa las horas utilizadas
+    :return: representa el recaudo total entre el costo del producto y las horas 
+    """
+
+
+
