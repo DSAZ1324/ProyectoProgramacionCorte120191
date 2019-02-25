@@ -17,7 +17,8 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_precio_servicio_extras(0), 0)
 
     def test_calcular_costo_envio(self):
-        pass
+        self.assertEqual(f.calcular_costo_envio(100), 11500)
+        self.assertEqual(f.calcular_costo_envio(0), 0)
 
     def test_calcular_precio_producto_fuera(self):
         self.assertEqual(f.calcular_precio_producto_fuera(5000, 50), 13250)
@@ -26,7 +27,9 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_precio_producto_fuera(0, 60), 6900)
 
     def test_calcular_iva_producto(self):
-        pass
+        self.assertEqual(f.calcular_iva_producto(10000, 0.19), 1900)
+        self.assertEqual(f.calcular_iva_producto(250000, 0.19), 47500)
+        self.assertEqual(f.calcular_iva_producto(0, 0), 0)
 
     def test_calcular_iva_servicio(self):
         self.assertEqual(f.calcular_iva_servicio(5, 19), 95000)
@@ -35,7 +38,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_iva_servicio(0, 19), 0)
 
     def test_calcular_iva_envio(self):
-        pass
+        self.assertEqual(f.calcular_iva_envio())
 
     def test_calcular_iva_servicio_extra(self):
         self.assertEqual(f.calcular_iva_servicio_extra(5, 19), 118750)
@@ -44,7 +47,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_iva_servicio_extra(5, 0), 0)
 
     def test_calcular_recaudo_locales(self):
-        pass
+        
 
     def test_calcular_recaudo_horas_extra(self):
         self.assertEqual(f.calcular_recaudo_horas_extra(1, 2, 3, 4), 1250000)
@@ -52,7 +55,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_recaudo_horas_extra(1, 2, 3, 0), 750000)
 
     def test_calcular_recaudo_mixto_local(self):
-        pass
+        
 
 
 if __name__ == 'main':
