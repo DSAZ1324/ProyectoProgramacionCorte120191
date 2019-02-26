@@ -38,7 +38,9 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_iva_servicio(0, 19), 0)
 
     def test_calcular_iva_envio(self):
-        self.assertEqual(f.calcular_iva_envio())
+        self.assertEqual(f.calcular_iva_envio(10000, 19), 1900)
+        self.assertEqual(f.calcular_iva_envio(100000, 19), 19000)
+        self.assertEqual(f.calcular_iva_envio(0, 0), 0)
 
     def test_calcular_iva_servicio_extra(self):
         self.assertEqual(f.calcular_iva_servicio_extra(5, 19), 118750)
@@ -47,7 +49,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_iva_servicio_extra(5, 0), 0)
 
     def test_calcular_recaudo_locales(self):
-        
+        self.assertEqual(f.calcular_recaudo_locales(1, 2, 3, 4), 100000)
 
     def test_calcular_recaudo_horas_extra(self):
         self.assertEqual(f.calcular_recaudo_horas_extra(1, 2, 3, 4), 1250000)
