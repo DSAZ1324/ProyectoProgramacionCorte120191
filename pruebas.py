@@ -57,7 +57,7 @@ class pruebas(unittest.TestCase):
         self.assertEqual(f.calcular_recaudo_horas_extra(1, 2, 3, 0), 750000)
 
     def test_calcular_recaudo_mixto_local(self):
-        
+        pass
 
 
 if __name__ == 'main':
