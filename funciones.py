@@ -159,6 +159,7 @@ def calcular_iva_envio(kilometros, tasa):
 
 
 def calcular_iva_servicio_extra(cantidad_horas, tasa):
+    pass
     """
     num -> num
 
@@ -245,3 +246,4 @@ def calcular_recaudo_mixto_local(coste_producto_1, coste_producto_2, horas_1, ho
     mixto_local = ((calcular_precio_producto(coste_producto_1) + calcular_precio_producto(coste_producto_2)) * 0.5) \
                   + calcular_precio_servicio(horas_1) + calcular_precio_servicio(horas_2)
     return mixto_local
+
